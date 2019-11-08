@@ -24,8 +24,7 @@ public class Usuario implements Serializable {
 	private String senha;
 	private PerfilEnum perfil;
 	
-	public Usuario() {
-		
+	public Usuario() {		
 	}
 
 	@Id
@@ -46,16 +45,7 @@ public class Usuario implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	@Column(name = "senha", nullable = false)
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
-
+	
 	@Enumerated(EnumType.STRING)
 	@Column(name = "perfil", nullable = false)
 	public PerfilEnum getPerfil() {
@@ -66,9 +56,13 @@ public class Usuario implements Serializable {
 		this.perfil = perfil;
 	}
 
-	@Override
-	public String toString() {
-		return "Usuario [id=" + id + ", email=" + email + ", senha=" + senha + ", perfil=" + perfil + "]";
+	@Column(name = "senha", nullable = false)
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 	
 }

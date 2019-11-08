@@ -9,11 +9,10 @@ public class JwtAuthenticationDto {
 	private String senha;
 
 	public JwtAuthenticationDto() {
-
 	}
 
-	@NotEmpty(message = "Email não pode ser vazio")
-	@Email(message = "Email inválido")
+	@NotEmpty(message = "Email não pode ser vazio.")
+	@Email(message = "Email inválido.")
 	public String getEmail() {
 		return email;
 	}
@@ -22,7 +21,7 @@ public class JwtAuthenticationDto {
 		this.email = email;
 	}
 
-	@NotEmpty(message = "Senha não pode ser vazia")
+	@NotEmpty(message = "Senha não pode ser vazia.")
 	public String getSenha() {
 		return senha;
 	}
@@ -31,4 +30,9 @@ public class JwtAuthenticationDto {
 		this.senha = senha;
 	}
 
+	@Override
+	public String toString() {
+		return "JwtAuthenticationDto [email=" + email + ", senha=" + senha + "]";
+	}
+	
 }

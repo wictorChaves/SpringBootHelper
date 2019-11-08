@@ -24,22 +24,12 @@ public class JwtUser implements UserDetails {
 	public Long getId() {
 		return id;
 	}
-
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		return authorities;
-	}
-
-	@Override
-	public String getPassword() {
-		return password;
-	}
-
+	
 	@Override
 	public String getUsername() {
 		return username;
 	}
-
+	
 	@Override
 	public boolean isAccountNonExpired() {
 		return true;
@@ -54,6 +44,16 @@ public class JwtUser implements UserDetails {
 	public boolean isCredentialsNonExpired() {
 		return true;
 	}
+	
+	@Override
+	public String getPassword() {
+		return password;
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return authorities;
+	}		
 
 	@Override
 	public boolean isEnabled() {

@@ -15,9 +15,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 
-	@Override
 	public Optional<Usuario> buscarPorEmail(String email) {
 		return Optional.ofNullable(this.usuarioRepository.findByEmail(email));
 	}
-
 }
