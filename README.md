@@ -1,6 +1,6 @@
 # SpringBootHelper
 
-[Criar novo projeto](https://start.spring.io/)
+[Wizard para criar um projeto novo](https://start.spring.io/)
  
 ## Descrições dos projetos
 
