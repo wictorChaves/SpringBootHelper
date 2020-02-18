@@ -1,6 +1,9 @@
 # SpringBootHelper
 
-[Wizard para criar um projeto novo](https://start.spring.io/)
+## Ajuda
+
+ - [Wizard para criar um projeto novo](https://start.spring.io/)
+ - [Criar query usando nome do método.](https://www.javaguides.net/2018/11/spring-data-jpa-query-creation-from-method-names.html)
  
 ## Descrições dos projetos
 
